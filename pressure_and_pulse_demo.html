@@ -59,7 +59,10 @@
     let userGUID = (new URLSearchParams(window.location.search)).get("guid");
 
     const querySnapshot = await getDocs(collection(db, userGUID));
-    querySnapshot.forEach((doc) => {
+
+    console.log("querySnapshot: "+ querySnapshot);
+
+    querySnapshot.docs.sort((a, b) => (a.data()["TIMESTAMP"] > b.data()["TIMESTAMP"]) ? 1 : -1).forEach((doc) => {
       let logEntryLine = document.createElement("tr");
 
       let logEntryDate = document.createElement("td");
