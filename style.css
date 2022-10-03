@@ -19,14 +19,18 @@ body {
   padding-bottom: 50px;
 }
 
-table, th, td {
-  border:1px solid black;
+table,
+th,
+td {
+  border: 1px solid black;
 }
 
 table {
   margin-top: 40px;
 }
-th, td {
+
+th,
+td {
   padding: 5px;
 }
 
@@ -64,6 +68,65 @@ th, td {
   border-radius: 3px;
   padding: 40px;
 }
+
+.title {
+  font-size: 37px;
+  line-height: 40px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.button {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 10px 30px;
+  }
+}
+
+#web-site-link {
+  .button;
+  background-color: #28a8e8;
+  border: 1px solid #28a8e8;
+}
+
+#source-code-link {
+  .button;
+  background-color: #25292f;
+  border: 1px solid #25292f;
+}
+
+#telegram-link {
+  .button;
+  background-color: #28a8e8;
+  border: 1px solid #28a8e8;
+}
+
 
 .header .full-name {
   font-size: 37px;
@@ -128,22 +191,23 @@ th, td {
   color: #04AA6D;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.details .section__title {
   margin-bottom: 10px;
 }
+
+/* .details .section__title {
+  margin-bottom: 10px;
+} */
 
 .manual_item .section__title {
   color: #00ffa1;
 }
 
 .manual_item {
-  display:block;
+  display: block;
   text-decoration: none;
   vertical-align: bottom;
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 40px;
   min-height: 250px;
   color: #f2f2f2;

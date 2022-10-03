@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Небольшой командный проект для портфолио" />
+  <meta property="og:url" content="https://grishaninvyacheslav.github.io/team_projects.html" />
+  <meta property="og:image" content="images\team_projects\pressure_and_pulse_log" />
+  <meta property="og:description"
+    content="Ищу android, backend, frontend или fullstack разработчиков для участия в командной разработке небольшого приложения для резюме и опыта. Есть демонстрационная версия приложения, описнаие дизайна и задач для реализации." />
+  <title>Командный проект</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZZM552ER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HZZZM552ER');
+  </script>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html">Моё резюме</a>
+    <a class="active" href="team_projects.html">Командные проекты</a>
+    <a href="manuals.html">Руководства</a>
+  </div>
+  <div class="container">
+    <div class="title">
+      Pressure-and-pulse-log
+    </div>
+    <div class="center">
+      Ищу Android (нативных на Kotlin) и Web разработчиков для командной разработки приложеня для резюме и опыта.
+      Предлагаю принять участие в разработке небольшого приложения для ведения журанала измерений артериального давления
+      и
+      пульса. Приложение состоит из android-клиента для ведения журанала и веб-страницы на которой можно просматривать
+      журанл пользователя без регистрации и установки приложений.
+      Backend часть приложения предварительно реализованна с помощью Firebase Cloud Firestore.
+    </div>
+    <div class="section__title">MVP версия приложения</div>
+    <div class="center">
+      <div class="preview">
+        <img src="images\team_projects\pressure_and_pulse_log\mvp_papl_preview_a.jpg">
+        <img src="images\team_projects\pressure_and_pulse_log\mvp_papl_preview_b.jpg">
+        <img src="images\team_projects\pressure_and_pulse_log\mvp_papl_preview_c.jpg">
+      </div>
+      <button class="button" role="button">Android</button>
+      <button id="web-site-link" class="button" role="button">Веб-сайт</button>
+      <button id="source-code-link" class="button" role="button">GitHub</button>
+    </div>
+    <div class="section__title">Задачи для реализации</div>
+    <div class="center">
+      <b>Документ с задачами для android-разработчиков:
+        <a href="https://github.com/ProEvent2021/ProEvent_android" target="_blank" rel="noopener noreferrer">
+          android_tasks.pdf
+        </a>
+      </b>
+      <br />
+      <br />
+      <b>Документ с описанием API, который нужно реализовать backend-разработчику:
+        <a href="https://github.com/ProEvent2021/ProEvent_android" target="_blank" rel="noopener noreferrer">
+          api_description.pdf
+        </a>
+      </b>
+      <br />
+      <br />
+      <b>
+        Внешний вид и функционал веб-сайта на усмотрение frontend-разработчика:
+      </b>
+      <br />
+      по задумке android-приложением пользуется
+      пациент для ведения журнала, а веб-сайтом пользуется
+      врач для просмотра данных пациентов. Поэтому минимум, что должно быть на сайте это возможность открыть таблицу с
+      журналом пациента по ссылке типа
+      <i>https://grishaninvyacheslav.github.io/pressure_and_pulse_demo.html?guid=d75204d9-745d-4f1f-84bf-0c1d79af3ae6</i>.
+      <br />
+      <br />
+      В таблице должны быть следующие столбцы:
+      <br />
+      Дата (пример значения: 13.08.2022, 15:44:40),
+      <br />
+      Систолическое (пример значения: 137),
+      <br />
+      Диастолическое (пример значения 95),
+      <br />
+      Пульс (пример значения: 78),
+      <br />
+      Аритмия (пример значения: нет),
+      <br />
+      Примичание (пример занчения: Каптоприл)
+      <br />
+      <br />
+      Если этого мало, то можно повторить функционал Android-приложения - отображать графики и статистику на основе
+      данных
+      журнала, и анкету c личными данными пацента.
+      С конечным дизайном Android-приложения можно ознакомиться здесь:
+      см. Версия 3
+      <a href="https://www.figma.com/file/HhYgs9ORvCuzfEEoqHSJRz/Pressure_and_pulse_log?node-id=63%3A70" target="_blank"
+        rel="noopener noreferrer">
+        макет android-приложения в Figma
+      </a>
+      <br />
+      <br />
+      В качетсве API, пока нет backend-разработчика, можно использовать Firebase. Если backend-разработчик сделает своё
+      API, то используем его.
+    </div>
+    <div class="section__title">ОТКЛИКНУТЬСЯ</div>
+    <div class="center">
+      Чтобы принять участие в проекте напишие в Telegram свою желаемую роль (android, backend, frontend),
+      какую задачу хотите взять и до какого срока вы её гарантированно выполните.
+      <br />
+      Если вы хотите поучастовать в качестве Android-разработчика, то вам необходимо уметь писать чистый код на Kotlin с
+      соблюдением принципов MVVM, SOLID и Single Activity, а также знать основы (иметь опыт использования по назначению
+      хотябы один раз) следующие библиотеки:
+      Retrofit, Room, Kotlin Coroutines, Cicerone.
+      <br />
+      <br />
+      <a href="https://t.me/Stacxjo" target="_blank" rel="noopener noreferrer">
+        <button id="telegram-link" class="button" role="button">
+          Написать в Telegram
+        </button>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
