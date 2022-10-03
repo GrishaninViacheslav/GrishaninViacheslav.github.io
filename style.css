@@ -90,6 +90,8 @@ td {
   outline: none;
   outline: 0;
   padding: 10px 25px;
+  margin-right: 3px;
+  margin-bottom: 3px;
   text-align: center;
   transform: translateY(0);
   transition: transform 150ms, box-shadow 150ms;
