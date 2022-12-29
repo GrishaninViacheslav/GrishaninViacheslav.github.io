@@ -32,8 +32,11 @@
     <a href="manuals.html">Руководства</a>
   </div>
   <div class="container">
-  <div class="code">
-  fun main(args: Array<String>) {
+  <div id = "code">
+  </div>
+  <script>
+  document.getElementById("code").innerText = `
+fun main(args: Array<String>) {
     val commitArray =
         arrayOf(
             Pair(0, false),
@@ -63,8 +66,8 @@ fun findBugIndex(arr: Array<Pair<Int, Boolean>>, startIndex: Int, endIndex: Int)
     }
     return findBugIndex(arr, startIndex, middleIndex)
 }
-</div>
-
+`
+  </script>
     <div class="header">
       <div class="left">
         <div class="full-name">
