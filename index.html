@@ -32,42 +32,6 @@
     <a href="manuals.html">Руководства</a>
   </div>
   <div class="container">
-  <div id = "code">
-  </div>
-  <script>
-  document.getElementById("code").innerText = `
-fun main(args: Array<String>) {
-    val commitArray =
-        arrayOf(
-            Pair(0, false),
-            Pair(1, false),
-            Pair(2, false),
-            Pair(3, false),
-            Pair(4, true),
-            Pair(5, true),
-            Pair(6, true),
-            Pair(7, true),
-            Pair(8, true),
-            Pair(9, true),
-            Pair(10, true),
-            Pair(11, true)
-        )
-
-    println(findBugIndex(commitArray, 0, commitArray.size))
-}
-
-fun findBugIndex(arr: Array<Pair<Int, Boolean>>, startIndex: Int, endIndex: Int): Int {
-    val middleIndex = startIndex + (endIndex - startIndex) / 2
-    if(!arr[middleIndex].second && arr[middleIndex + 1].second){
-        return middleIndex + 1
-    }
-    if(!arr[middleIndex].second && !arr[middleIndex + 1].second){
-        return findBugIndex(arr, middleIndex, endIndex)
-    }
-    return findBugIndex(arr, startIndex, middleIndex)
-}
-`
-  </script>
     <div class="header">
       <div class="left">
         <div class="full-name">
